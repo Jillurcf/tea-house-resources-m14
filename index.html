@@ -22,7 +22,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        "gradient-start": 'orange-500',
+                        "gradient-end": 'red-500',
                     }
                 }
             }
@@ -38,19 +39,20 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+    <header class="container mx-auto ">
+        <div class="my-20">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
 
-                <div class="flex-1">
+                <div class="">
                     <h1 class="text-7xl font-extrabold">It's good <br>
                         tea time at The <br>Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-orange-500 to-red-500">Explore More <i
+                            class="fa-solid fa-arrow-trend-up"></i></button>
                 </div>
-                <div class="flex-1">
-                    <img src="/images/banner.png" class="max-w-sm" />
+                <div class="">
+                    <img src="/images/banner.png" class="" />
                     <!-- ratings badge -->
                     <div class="-mt-16 rounded-xl flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-3xl text text-amber-400"></i>
@@ -152,7 +154,7 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn bg-gradient-to-r from-orange-500 to-red-500">Show All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -195,8 +197,60 @@
                 </div>
             </div>
         </section>
+        <section></section>
+
     </main>
-    <footer></footer>
+    <footer class="lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-orange-500 to-red-500">Get Started</button>
+            </p>
+
+        </div>
+        <div class="footer ">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-black outline:none" />
+                        <button
+                            class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-orange-500 to-red-500"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+    </footer>
+
 
 </body>
 
